@@ -24,4 +24,17 @@
 python3 -m unittest discover -s tests -v
 ```
 
+`tests/test_sources.py` 核对资料格式与引用；`tests/test_pipeline.py` 固化
+分类与分送的业务不变量（PU 口径、转发防泄漏、目录分裂、OOV、容量、
+同信同桌一位、已签收保留等）。
+
+## 运行分类选型与当周分送
+
+```sh
+python3 -I run_pipeline.py --data data --out reports --today 50
+```
+
+全程本地、只读 `data/`、只写 `reports/`，不访问网络或外部模型服务。
+方法、口径与报告字段见 [`docs/METHOD.md`](docs/METHOD.md)。
+
 这项检查核对资料格式与引用，不生成业务结论。

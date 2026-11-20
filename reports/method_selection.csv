@@ -1,0 +1,9 @@
+window,policy,topic,desk,method,threshold,audit_coverage,audit_misroute_rate,audit_misroute_upper95,audit_support_pos,audit_support_neg,oov_blocks
+first,v1,claim,review,rule,,1.0,0.0,0.7302,1,0,0
+first,v1,contact,service,rule,,1.0,0.0,0.7302,1,0,0
+first,v2,contact,service,rule,,1.0,0.0,0.2788,7,2,0
+first,v2,refund,finance,rule,,1.0,0.0,0.2528,8,5,0
+second,v2,contact,service,nbayes,0.3,1.0,0.0,0.4035,4,1,0
+second,v2,identity,review,rule,,1.0,0.0,0.4742,3,0,0
+second,v2,promise,review,rule,,1.0,0.0,0.7302,1,0,0
+second,v2,refund,finance,logreg,0.9,1.0,0.0,0.4742,3,3,0
