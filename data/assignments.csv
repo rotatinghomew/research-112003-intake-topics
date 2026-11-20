@@ -1,0 +1,5 @@
+letter,topic,desk,issued,ack,state
+x237,claim,manual,49,50,received
+x241,identity,review,49,,waiting
+x241,refund,finance,49,50,received
+x244,contact,service,49,,waiting
